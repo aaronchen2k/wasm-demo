@@ -51,7 +51,7 @@ func readFileFunc(this js.Value, args []js.Value) interface{} {
 	callback := args[len(args)-1]
 
 	go func() {
-		time.Sleep(3 * time.Second)
+		time.Sleep(1 * time.Second)
 		v := readFile(pth)
 
 		callback.Invoke(v)
