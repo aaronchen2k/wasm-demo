@@ -33,7 +33,7 @@ func fibFunc(this js.Value, args []js.Value) interface{} {
 		callback.Invoke(v)
 	}()
 
-	js.Global().Get("ans").Set("innerHTML", "sleep 3s ...")
+	js.Global().Get("ans").Set("innerHTML", "generating ...")
 	return nil
 }
 
@@ -57,7 +57,7 @@ func readFileFunc(this js.Value, args []js.Value) interface{} {
 		callback.Invoke(v)
 	}()
 
-	msg := fmt.Sprintf("reading file %s ...", pth)
+	msg := fmt.Sprintf("sleep 1s then read file %s ...", pth)
 
 	js.Global().Get("content").Set("innerHTML", msg)
 
