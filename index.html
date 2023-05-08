@@ -8,14 +8,19 @@
 
 <body>
 <!--
-    <input id="num" type="number" />
-    <button id="btn">Click</button>
-    <p id="ans">1</p>
+<input id="num" type="number" />
+<button id="btn">Click</button>
+<p id="ans">1</p>
+
+<input id="num" type="number" />
+<button id="btn" onclick="fibFunc(num.value * 1, (v)=> ans.innerHTML=v)">Click</button>
+<p id="ans"></p>
 -->
 
-    <input id="num" type="number" />
-    <button id="btn" onclick="fibFunc(num.value * 1, (v)=> ans.innerHTML=v)">Click</button>
-    <p id="ans"></p>
+<input id="pth" value="data/city/v1.xlsx" />
+<button id="btn" onclick="readFileFunc(pth.value, (v)=> content.innerHTML=v)">Read</button>
+
+<p id="content"></p>
 
 </body>
 
