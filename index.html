@@ -15,10 +15,19 @@
 <input id="num" type="number" />
 <button id="btn" onclick="fibFunc(num.value * 1, (v)=> ans.innerHTML=v)">Click</button>
 <p id="ans"></p>
--->
+
 
 <input id="pth" value="data/city/v1.xlsx" />
 <button id="btn" onclick="readFileFunc(pth.value, (v)=> content.innerHTML=v)">Read</button>
+-->
+
+<input id="db" value="db_wasm_test" style="width: 300px;" /> <br/>
+
+<input id="tbl" value="table_wasm_test" style="width: 300px;" /> <br/>
+
+<input id="sql" value="SELECT * FROM table_wasm_test" style="width: 300px;" /> <br/>
+
+<button id="btn" onclick="selectDataFunc(db.value, tbl.value, sql.value, (v)=> content.innerHTML=v)">Read</button>
 
 <p id="content"></p>
 
